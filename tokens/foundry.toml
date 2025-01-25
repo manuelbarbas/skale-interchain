@@ -1,6 +1,6 @@
 [profile.default]
-solc-version = '0.8.7'
-evm_compiler = 'london'
+solc-version = '0.8.19'
+evm_compiler = 'paris'
 out = 'out'
 cache_path = 'cache/foundry'
 verbosity = 3
