@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity 0.8.7;
 
 import {Test, console} from "forge-std/Test.sol";
 import {InterchainERC20} from "../src/interchain/InterchainERC20.sol";
