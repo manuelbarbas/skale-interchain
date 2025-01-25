@@ -6,6 +6,9 @@ This repo also contains a slightly modified [multisigwallet-cli](/multisigwallet
 
 ## Getting Started
 
+> Note, this has been tested on MacOS and should be compatible with all UNIX based systems.
+> It is not guaranteed to work on Windows
+
 Start by making sure you have the following installed on your system:
 
 - One of the Python verisons: 3.7, 3.8, 3.9, 3.10, 3.11
