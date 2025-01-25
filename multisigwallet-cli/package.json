@@ -1,0 +1,26 @@
+{
+  "name": "multisigwallet-cli",
+  "version": "1.0.0",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "prepare": "npx tsc && yarn chmod && yarn symlink",
+    "chmod": "chmod u+x ./bin/src/msig.js",
+    "symlink": "cp bin/src/msig.js node_modules/.bin/msig",
+    "genesis": "./scripts/generate_genesis.py",
+    "init-geth": "geth --datadir blockchain init genesis/genesis.json",
+    "run-geth": "geth --datadir blockchain --dev --http --mine --miner.threads 1"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@typechain/hardhat": "^3.0.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^18.11.18",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "hardhat": "2.14.0",
+    "ts-node": "^10.9.2",
+    "typechain": "^6.1.0",
+    "typescript": "^5.3.3"
+  }
+}

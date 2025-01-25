@@ -1,0 +1,8 @@
+node_modules
+bin
+venv
+.env
+genesis.json
+cache
+blockchain
+data/*
