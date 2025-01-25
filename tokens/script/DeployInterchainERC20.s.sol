@@ -2,17 +2,18 @@
 pragma solidity ^0.8.13;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {InterchainERC20} from "../src/interchain/InterchainERC20.sol";
 
-contract CounterScript is Script {
-    Counter public counter;
+// DO NOT USE DIRECTLY
+contract InterchainERC20Script is Script {
+    InterchainERC20 public erc20;
 
     function setUp() public {}
 
     function run() public {
         vm.startBroadcast();
 
-        counter = new Counter();
+        erc20 = new InterchainERC20("Interchain Token", "INT20");
 
         vm.stopBroadcast();
     }
