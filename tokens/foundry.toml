@@ -18,10 +18,14 @@ remappings = [
 [rpc_endpoints]
 calypso = 'https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague'
 calypso_testnet = 'https://testnet.skalenodes.com/v1/giant-half-dual-testnet'
+europa_testnet = 'https://testnet.skalenodes.com/v1/juicy-low-small-testnet'
+holesky = 'https://1rpc.io/holesky'
 
 [etherscan]
 calypso = { key = 'na', url = 'https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/api' }
 calypso_testnet = { key = 'na', url = 'https://giant-half-dual-testnet.explorer.testnet.skalenodes.com/api' }
+europa_testnet = { key = 'na', url = 'https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/api' }
+holesky = { key = '${ETHERSCAN_API_KEY}', url = 'https://api-holesky.etherscan.io/api' }
 
 [fuzz]
 runs = 1000
