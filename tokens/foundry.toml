@@ -17,14 +17,25 @@ remappings = [
 
 [rpc_endpoints]
 calypso = 'https://mainnet.skalenodes.com/v1/honorable-steel-rasalhague'
+europa = 'https://mainnet.skalenodes.com/v1/elated-tan-skat'
+nebula = 'https://mainnet.skalenodes.com/v1/green-giddy-denebola'
+titan = 'https://mainnet.skalenodes.com/v1/parallel-stormy-spica'
 calypso_testnet = 'https://testnet.skalenodes.com/v1/giant-half-dual-testnet'
 europa_testnet = 'https://testnet.skalenodes.com/v1/juicy-low-small-testnet'
+nebula_testnet = 'https://testnet.skalenodes.com/v1/lanky-ill-funny-testnet'
+titan_testnet = 'https://testnet.skalenodes.com/v1/aware-fake-trim-testnet'
 holesky = 'https://1rpc.io/holesky'
 
 [etherscan]
 calypso = { key = 'na', url = 'https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/api' }
+europa = { key = 'na', url = 'https://elated-tan-skat.explorer.mainnet.skalenodes.com/api' }
+nebula = { key = 'na', url = 'https://green-giddy-denebola.explorer.mainnet.skalenodes.com/api' }
+titan = { key = 'na', url = 'https://parallel-stormy-spica.explorer.mainnet.skalenodes.com/api' }
 calypso_testnet = { key = 'na', url = 'https://giant-half-dual-testnet.explorer.testnet.skalenodes.com/api' }
 europa_testnet = { key = 'na', url = 'https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/api' }
+nebula_testnet = { key = 'na', url = 'https://lanky-ill-funny-testnet.explorer.testnet.skalenodes.com/api' }
+titan_testnet =  { key = 'na', url = 'https://aware-fake-trim-testnet.explorer.testnet.skalenodes.com/api' }
+
 holesky = { key = '${ETHERSCAN_API_KEY}', url = 'https://api-holesky.etherscan.io/api' }
 
 [fuzz]
