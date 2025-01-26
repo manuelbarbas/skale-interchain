@@ -14,6 +14,7 @@ contract EthereumERC20 is ERC20 {
         uint8 _decimals
     ) ERC20(name, symbol) {
        _customDecimals = _decimals;
+       _mint(_msgSender(), 100_000_100 * 10 ** _decimals);
     }
 
     // Override the decimals() function
