@@ -13,6 +13,7 @@ import {InterchainUSDC} from "../src/erc20Tokens/InterchainUSDC.sol";
 import {InterchainUSDP} from "../src/erc20Tokens/InterchainUSDP.sol";
 import {InterchainUSDT} from "../src/erc20Tokens/InterchainUSDT.sol";
 import {InterchainWBTC} from "../src/erc20Tokens/InterchainWBTC.sol";
+import {InterchainTUSD} from "../src/erc20Tokens/InterchainTUSD.sol";
 
 import {EthereumERC20} from "../src/erc20Tokens/EthereumERC20.sol";
 
@@ -39,6 +40,7 @@ contract FullInterchainDeploymentScript is Script {
     bytes32 public constant USDP = keccak256(abi.encodePacked("USDP"));
     bytes32 public constant USDT = keccak256(abi.encodePacked("USDT"));
     bytes32 public constant WBTC = keccak256(abi.encodePacked("WBTC"));
+    bytes32 public constant TUSD = keccak256(abi.encodePacked("TUSD"));
 
     function run(
         string memory tokenName,
@@ -60,6 +62,7 @@ contract FullInterchainDeploymentScript is Script {
         else if (tokenNameHash == USDP) interchainERC20 = new InterchainUSDP();
         else if (tokenNameHash == USDT) interchainERC20 = new InterchainUSDT();
         else if (tokenNameHash == WBTC) interchainERC20 = new InterchainWBTC();
+        else if (tokenNameHash == TUSD) interchainERC20 = new InterchainTUSD();
         else revert("Invalid Token Symbol");
 
         emit DeployERC20(interchainERC20.name(), interchainERC20.symbol(), interchainERC20.decimals());
@@ -83,6 +86,7 @@ contract FullInterchainDeploymentScript is Script {
             else if (tokenNameHash == USDP) destinationERC20 = new InterchainUSDP();
             else if (tokenNameHash == USDT) destinationERC20 = new InterchainUSDT();
             else if (tokenNameHash == WBTC) destinationERC20 = new InterchainWBTC();
+            else if (tokenNameHash == TUSD) destinationERC20 = new InterchainTUSD();
             else revert("Invalid Token Symbol");
             emit DeployERC20(destinationERC20.name(), destinationERC20.symbol(), destinationERC20.decimals());
             
